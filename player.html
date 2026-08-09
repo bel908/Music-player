@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="styleplayer.css">
+</head>
+<body>
+  <div class="container">
+<h1 class="page-title"> Music Player</h1>
+  <div class="wrapper">
+    <!--playlist on the left-->
+ <div class="playlist">
+    <!-- existing player content -->
+  
+    <h4>Playlist</h4>
+    <ul id="songList">
+      <!-- Songs will be injected here -->
+    </ul>
+  </div>
+
+<!--player on the upper right-->
+  <div class="player">
+    <h2 id="title">Song Title</h2>
+    <h3 id="artist">Artist Name</h3>
+
+    <audio id="audio"></audio>
+    <div class="controls">
+  <button id="prev"><img src="https://static.thenounproject.com/png/2786283-200.png" alt="Previous"></button>
+  <button id="play"><img src="https://cdn-icons-png.flaticon.com/512/109/109197.png" alt="Play"></button>
+  <button id="pause"><img src="https://cdn-icons-png.flaticon.com/512/26/26920.png" alt="Pause"></button>
+  <button id="next"><img src="https://cdn-icons-png.flaticon.com/512/3318/3318614.png" alt="Next"></button>
+    </div>
+
+    <div class="progress-container">
+      <input type="range" id="progress" value="0" max="100">
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="volume-container">
+      <label for="volume">🔊</label>
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+    </div>
+  </div>
+  </div>
+  </div>
+  <script src="scriptplayer.js"></script>
+</body>
+</html>
