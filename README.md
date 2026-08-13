@@ -7,8 +7,8 @@ This project demonstrates how to create a clean, interactive interface for playi
 📂 Project Structure
 
 task4/
-│── images/          # Icons, artwork, or UI assets
-│── music/           # Audio files (mp3, wav, etc.)
+│── images/          # UI assets
+│── music/           # Audio files (mp3, flac)
 │── player.html      # Main HTML file
 │── styleplayer.css  # Styling for the player
 │── scriptplayer.js  # Player functionality
